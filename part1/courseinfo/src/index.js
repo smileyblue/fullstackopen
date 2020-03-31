@@ -9,7 +9,6 @@ const Header = (props) => {
 
 const Content = (props) => {
   var parts=props.parts.parts
-  var listItems
 
   var listItems = parts.map(parts => {
     return(
@@ -60,12 +59,12 @@ const App = () => {
       }
     ]
   }
-
+  
   return (
     <div>
       <Header course={course} />
       <Content parts={course} />
-      <Total parts={course} />
+      <Total parts={course}/>
     </div>
   )
 }
